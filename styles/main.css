@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Space+Mono:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #e2e2e2;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header .logo {
+  position: fixed;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  margin: 1.6em 1.6em;
+  width: 0px;
+  height: 0px;
+}
+
+.nav-icon {
+  position: fixed;
+  right: 0;
+  top: 1.4em;
+  margin: 1em 1.6em;
+  z-index: 100;
+}
+
+.nav-icon:hover {
+  cursor: pointer;
+}
+
+.menu-open {
+  display: block;
+}
+
+.menu-close {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 50;
+  right: 0;
+}
+
+nav .selected {
+  margin-left: -2em;
+}
+
+nav .selected a {
+  color: #e2e2e2;
+}
+
+nav .selected ::after {
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: #e2e2e2;
+  bottom: 10px;
+  left: 0;
+}
+
+nav ul {
+  position: relative;
+  left: 70vw;
+  margin: 6em 0 1em 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 1em 0;
+  position: relative;
+}
+
+nav ul li a {
+  color: #706969;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #e2e2e2;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Space Mono", sans-serif;
+  position: relative;
+  top: 32vh;
+}
+
+svg path {
+  fill: purple;
+}
+/*# sourceMappingURL=main.css.map */
