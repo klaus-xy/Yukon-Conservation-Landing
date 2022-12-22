@@ -59,7 +59,8 @@ nav {
   background-color: rgb(0, 0, 0);
   z-index: 50;
   right: 0;
-  //transform: translateX(250px);
+  //ANIMATE THIS
+  //transform: translateX(1000px);
   .selected {
     margin-left: -2em;
     a {
@@ -68,10 +69,10 @@ nav {
     ::after {
       content: " ";
       position: absolute;
-      width: 80px;
-      height: 2px;
+      width: 90px;
+      height: 2.6px;
       background-color: $PaleWhite;
-      bottom: 10px;
+      bottom: 14px;
       left: 0;
     }
   }
@@ -98,6 +99,26 @@ nav {
       }
     }
   }
+
+  .nav-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-top: 40vh;
+
+    svg {
+      path {
+        fill: $Gray;
+      }
+      &:hover {
+        cursor: pointer;
+        path {
+          fill: $PaleWhite;
+        }
+      }
+    }
+  }
 }
 
 .hero {
@@ -114,10 +135,4 @@ footer {
   font-family: "Space Mono", sans-serif;
   position: relative;
   top: 32vh;
-}
-
-svg {
-  path {
-    fill: purple;
-  }
 }

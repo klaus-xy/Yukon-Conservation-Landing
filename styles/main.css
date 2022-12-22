@@ -75,10 +75,10 @@ nav .selected a {
 nav .selected ::after {
   content: " ";
   position: absolute;
-  width: 80px;
-  height: 2px;
+  width: 90px;
+  height: 2.6px;
   background-color: #e2e2e2;
-  bottom: 10px;
+  bottom: 14px;
   left: 0;
 }
 
@@ -104,6 +104,32 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #e2e2e2;
+}
+
+nav .nav-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+  margin-top: 40vh;
+}
+
+nav .nav-socials svg path {
+  fill: #706969;
+}
+
+nav .nav-socials svg:hover {
+  cursor: pointer;
+}
+
+nav .nav-socials svg:hover path {
+  fill: #e2e2e2;
 }
 
 .hero {
@@ -135,9 +161,5 @@ footer {
   font-family: "Space Mono", sans-serif;
   position: relative;
   top: 32vh;
-}
-
-svg path {
-  fill: purple;
 }
 /*# sourceMappingURL=main.css.map */
