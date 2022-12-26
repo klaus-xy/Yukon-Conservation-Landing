@@ -29,8 +29,8 @@ body {
 
 .container header .logo {
   position: fixed;
-  -webkit-transform: scale(0.18);
-          transform: scale(0.18);
+  -webkit-transform: scale(0.17);
+          transform: scale(0.17);
   margin: 1.6em 1.6em;
   width: 0px;
   height: 0px;
@@ -87,7 +87,7 @@ body {
 
 .container header nav ul {
   position: relative;
-  left: 70vw;
+  left: 64vw;
   margin: 6em 0 1em 0;
 }
 
@@ -120,7 +120,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 4em;
-  margin-top: 40vh;
+  margin-top: 30vh;
+}
+
+.container header nav .nav-socials svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .container header nav .nav-socials svg path {
@@ -159,10 +164,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 2em;
+  width: 100%;
 }
 
 .hero .hero-img {
-  margin: 6em 2em 1em 2em;
+  margin: 2.2em 2em 1em 2em;
 }
 
 .hero .hero-logo {
@@ -180,8 +186,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 4em;
-  margin-top: 6em;
+  gap: 2em;
+  margin-top: 1em;
 }
 
 .hero .hero-socials svg path {
@@ -207,7 +213,133 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Space Mono", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #706969;
   position: relative;
-  top: 32vh;
+  top: 10vh;
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    margin-top: 2em;
+  }
+  .container header {
+    /* .logo {
+        //position: fixed;
+        //transform: scale(0.17);
+        //margin: 1.6em 1.6em;
+        //width: 0px;
+        // height: 0px;
+      }*/
+    /*.nav-icon {
+        position: fixed;
+        right: 0;
+        top: 2.8em;
+        margin: 1em 1.6em 0 1.6em;
+        z-index: 100;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }*/
+    /*.menu-open {
+        display: block;
+      }
+
+      .menu-close {
+        display: none;
+      }*/
+  }
+  .container header nav {
+    right: 10;
+    /*.selected {
+          margin-left: -2em;
+          a {
+            color: $PaleWhite;
+          }
+          ::after {
+            content: " ";
+            position: absolute;
+            width: 90px;
+            height: 2.6px;
+            background-color: $PaleWhite;
+            bottom: 14px;
+            left: 0;
+          }
+        }*/
+    /*.nav-socials {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4em;
+          margin-top: 30vh;
+
+          svg {
+            transform: scale(1.2);
+            path {
+              fill: $Gray;
+            }
+            &:hover {
+              cursor: pointer;
+              path {
+                fill: $PaleWhite;
+              }
+            }
+          }
+        }*/
+  }
+  .container header nav ul {
+    left: 68vw;
+  }
+  .container header nav ul li a {
+    font-size: 26px;
+    /* &:hover {
+                color: $PaleWhite;
+              }*/
+  }
+  .hero {
+    /*.hero-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      margin-top: 1em;
+      svg {
+        path {
+          fill: $Gray;
+        }
+        &:hover {
+          cursor: pointer;
+          path {
+            fill: $PaleWhite;
+          }
+        }
+      }
+    }*/
+  }
+  .hero h1 {
+    font-size: 28px;
+    letter-spacing: 8px;
+  }
+  .hero .hero-img {
+    margin: 2.2em 2em 1em 2em;
+    width: 410px;
+    height: auto;
+  }
+  .hero .hero-logo {
+    width: 86px;
+    height: auto;
+  }
+  /* footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 100;
+    color: $Gray;
+    position: relative;
+    top: 10vh;
+  }*/
 }
 /*# sourceMappingURL=main.css.map */
