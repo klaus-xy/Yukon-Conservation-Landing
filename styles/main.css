@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Space+Mono:wght@400;700&display=swap");
+@font-face {
+  font-family: "MinimalThin";
+  src: url(../Fonts/MinimalThin-Regular.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -173,7 +178,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "minimal", sans-serif;
+  font-family: "MinimalThin" sans-serif;
   font-weight: 100;
   font-size: 24px;
   letter-spacing: 6px;
