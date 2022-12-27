@@ -31,7 +31,7 @@ body {
     .logo {
       position: fixed;
       transform: scale(0.17);
-      margin: 1.6em 1.6em;
+      margin: -1em 1.6em;
       width: 0px;
       height: 0px;
     }
@@ -39,7 +39,7 @@ body {
     .nav-icon {
       position: fixed;
       right: 0;
-      top: 2.8em;
+      top: 0.2em;
       margin: 1em 1.6em 0 1.6em;
       z-index: 100;
 
@@ -147,6 +147,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 2em;
+    margin-bottom: 1em;
     width: 100%;
   }
   .hero-img {
