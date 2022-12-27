@@ -360,7 +360,7 @@ footer {
   }*/
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1080px) {
   .container {
     position: relative;
     margin-top: 2em;
@@ -444,7 +444,7 @@ footer {
   }
   .hero .right {
     position: relative;
-    left: 60%;
+    left: 70%;
     bottom: 50px;
   }
   .hero .left {
@@ -453,7 +453,7 @@ footer {
     margin: 2em;
   }
   .hero h1 {
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: 6px;
     margin: 1em 2em 0.8em 2em;
     width: 100%;
@@ -464,7 +464,109 @@ footer {
     height: auto;
   }
   .hero .hero-logo {
-    width: 90px;
+    width: 100px;
+    height: auto;
+  }
+  .hero .hero-socials {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin-top: 2em;
+    width: 1440px;
+    margin: 2em auto 2em auto;
+  }
+  .container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container header .logo {
+    position: unset;
+    -webkit-transform: scale(0.17);
+            transform: scale(0.17);
+    margin: 0.25em 1.6em;
+  }
+  .container header nav {
+    position: unset;
+    width: 550px;
+    height: auto;
+  }
+  .container header nav .selected ::after {
+    width: 52px;
+    height: 2.6px;
+    bottom: -2px;
+    left: 16px;
+  }
+  .container header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    left: unset;
+    margin: 0em 2em;
+  }
+  .container header nav ul li {
+    padding: 0 1em;
+  }
+  .container header nav ul li a {
+    font-size: 22px;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 950px;
+    height: auto;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 6em;
+  }
+  .hero .right {
+    position: relative;
+    left: 70%;
+    bottom: 50px;
+  }
+  .hero .left {
+    position: relative;
+    right: 80%;
+    margin: 2em;
+  }
+  .hero h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin: 1em 2em 0.8em 2em;
+    width: 100%;
+  }
+  .hero .hero-img {
+    margin: 2.2em 2em 0em 2em;
+    width: 720px;
+    height: auto;
+  }
+  .hero .hero-logo {
+    width: 120px;
     height: auto;
   }
   .hero .hero-socials {
