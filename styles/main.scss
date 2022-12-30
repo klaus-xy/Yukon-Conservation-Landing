@@ -150,8 +150,17 @@ body {
     margin-bottom: 1em;
     width: 100%;
   }
-  .hero-img {
-    margin: 2.2em 0 1em 0;
+  // .hero-img {
+  //   margin: 2.2em 0 1em 0;
+  // }
+  .hero-mob-img {
+    display: none;
+  }
+  .hero-desk-img {
+    display: block;
+    margin: 2.2em 0em 1em 0em;
+    width: 375px;
+    height: auto;
   }
   .hero-logo {
     width: 70px;
@@ -188,7 +197,7 @@ footer {
   font-weight: 100;
   color: $Gray;
   position: relative;
-  top: 10vh;
+  top: 14vh;
 }
 
 //--------------------MEDIA QUERIES--------------//
@@ -316,9 +325,13 @@ footer {
       // margin: 2em;
       // width: 100%;
     }
-    .hero-img {
-      margin: 2.2em 0 1em 0;
-      width: 410px;
+    .hero-mob-img {
+      display: none;
+    }
+    .hero-desk-img {
+      display: block;
+      margin: 2.2em 0em 1em 0em;
+      width: 600px;
       height: auto;
     }
     .hero-logo {
@@ -468,18 +481,18 @@ footer {
     width: 800px;
     height: auto;
     margin: auto;
-    margin-top: 16em;
+    margin-top: 14em;
     margin-bottom: 6em;
 
     .right {
       position: relative;
-      left: 70%;
+      left: 65%;
       bottom: 50px;
     }
 
     .left {
       position: relative;
-      right: 70%;
+      right: 80%;
       margin: 2em;
     }
 
@@ -493,9 +506,13 @@ footer {
       margin: 1em 2em 0.8em 2em;
       width: 100%;
     }
-    .hero-img {
+    .hero-mob-img {
+      display: none;
+    }
+    .hero-desk-img {
+      display: block;
       margin: 2.2em 2em 0em 2em;
-      width: 550px;
+      width: 600px;
       height: auto;
     }
     .hero-logo {
@@ -510,6 +527,9 @@ footer {
       // gap: 2em;
       margin-top: 1em;
     }
+  }
+  footer {
+    top: 10vh;
   }
 }
 
@@ -612,15 +632,15 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 950px;
+    width: 920px;
     height: auto;
     margin: auto;
-    margin-top: 10em;
-    margin-bottom: 6em;
+    margin-top: 12em;
+    margin-bottom: 0em;
 
     .right {
       position: relative;
-      left: 70%;
+      left: 65%;
       bottom: 50px;
     }
 
@@ -633,14 +653,18 @@ footer {
     h1 {
       // font-family: "minimal", sans-serif;
       // font-weight: 100;
-      font-size: 50px;
-      letter-spacing: 10px;
+      font-size: 40px;
+      letter-spacing: 8px;
       // text-transform: uppercase;
       // text-align: center;
       margin: 1em 2em 0.8em 2em;
       width: 100%;
     }
-    .hero-img {
+    .hero-mob-img {
+      display: none;
+    }
+    .hero-desk-img {
+      display: block;
       margin: 2.2em 2em 0em 2em;
       width: 720px;
       height: auto;
@@ -657,5 +681,8 @@ footer {
       // gap: 2em;
       margin-top: 1em;
     }
+  }
+  footer {
+    top: 16vh;
   }
 }
