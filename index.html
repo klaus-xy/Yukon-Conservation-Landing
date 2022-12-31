@@ -11,12 +11,13 @@
   <body>
     <div class="container">
       <header>
-        <div class="logo">
+        <div class="logo" id="logo">
           <a href="#"><img src="./images/logo.png" alt="yc-logo" /></a>
         </div>
 
         <svg
           class="menu-open nav-icon"
+          id="menu-open"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="18"
@@ -42,6 +43,7 @@
         </svg>
         <svg
           class="menu-close nav-icon"
+          id="menu-close"
           xmlns="http://www.w3.org/2000/svg"
           width="19.414"
           height="19.414"
@@ -64,12 +66,12 @@
             />
           </g>
         </svg>
-        <nav>
+        <nav class="nav" id="nav">
           <ul>
-            <li class="selected"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="selected"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
 
           <div class="nav-socials">
@@ -112,7 +114,7 @@
           </div>
         </nav>
       </header>
-      <div class="hero">
+      <div class="hero" id="hero">
         <div class="right top">
           <img
             class="hero-mob-img"
@@ -171,5 +173,7 @@
 
       <footer>designed and coded by klaus</footer>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
