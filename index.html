@@ -68,10 +68,18 @@
         </svg>
         <nav class="nav" id="nav">
           <ul>
-            <li class="selected"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#explore">Explore</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="nav-item" id="1" onclick="click_reply(this.id)">
+              <a href="#home">Home</a>
+            </li>
+            <li class="nav-item" id="2" onclick="click_reply(this.id)">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-item" id="3" onclick="click_reply(this.id)">
+              <a href="#explore">Explore</a>
+            </li>
+            <li class="nav-item" id="4" onclick="click_reply(this.id)">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
 
           <div class="nav-socials">
@@ -171,7 +179,7 @@
         </div>
       </div>
 
-      <footer>designed and coded by klaus</footer>
+      <footer class="footer" id="footer">designed and coded by klaus</footer>
     </div>
 
     <script src="./index.js"></script>

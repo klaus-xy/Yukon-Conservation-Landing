@@ -62,24 +62,26 @@ body {
       height: 100vh;
       background-color: rgb(0, 0, 0);
       z-index: 50;
-      right: 0;
+      right: 18px;
       //margin-top: -2em;
       //ANIMATE THIS
       transform: translateX(1000px);
       transition: transform 0.8s ease-in-out;
+
       .selected {
-        margin-left: -2em;
+        transform: translateX(-0.8em);
         a {
           color: $PaleWhite;
         }
         ::after {
-          content: " ";
-          position: absolute;
-          width: 90px;
-          height: 2.6px;
-          background-color: $PaleWhite;
-          bottom: 14px;
-          left: 0;
+          //content: " ";
+          //position: absolute;
+          width: 70px;
+          //height: 2.6px;
+          //background-color: $PaleWhite;
+          //bottom: 14px;
+          //left: 0;
+          //transition: width 0.5s ease-in-out;
         }
       }
       ul {
@@ -88,9 +90,26 @@ body {
         left: 64vw;
         margin: 6em 0 1em 0;
         li {
+          ::after {
+            content: " ";
+            position: absolute;
+            width: 0px;
+            height: 2.6px;
+            background-color: $PaleWhite;
+            bottom: 14px;
+            left: 0;
+            transition: width 0.4s ease-in-out;
+          }
+
           list-style: none;
-          padding: 1em 0;
+          padding: 1em 0em;
           position: relative;
+          //width: 100px;
+          height: auto;
+          transition: transform 0.25s ease-in-out;
+          &:hover {
+            transform: translateX(-1.2em);
+          }
 
           a {
             color: $Gray;
@@ -98,6 +117,7 @@ body {
             font-size: 24px;
             font-weight: 400;
             text-transform: uppercase;
+            letter-spacing: 2px;
 
             &:hover {
               color: $PaleWhite;
@@ -110,11 +130,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4em;
-        margin-top: 30vh;
+        gap: 2.2em;
+        margin-top: 22vh;
 
         svg {
-          transform: scale(1.2);
+          transform: scale(1);
           path {
             fill: $Gray;
           }
@@ -204,6 +224,8 @@ footer {
   color: $Gray;
   position: relative;
   top: 14vh;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
 }
 
 //--------------------MEDIA QUERIES--------------//
@@ -247,7 +269,7 @@ footer {
         //height: 100vh;
         //background-color: rgb(0, 0, 0);
         //z-index: 50;
-        right: 10;
+        right: -50;
         //ANIMATE THIS
         //transform: translateX(0px);
 
@@ -270,7 +292,7 @@ footer {
         ul {
           //position: relative;
           //justify-content: right;
-          left: 68vw;
+          left: 76vw;
           //margin: 6em 0 1em 0;
           li {
             // list-style: none;
