@@ -4,8 +4,10 @@ const logo = document.getElementById("logo");
 const footer = document.getElementById("footer");
 const open_nav_btn = document.getElementById("menu-open");
 const close_nav_btn = document.getElementById("menu-close");
-const nav_item = document.querySelectorAll(".nav-item");
+const nav_items = document.querySelectorAll(".nav-item");
 let _item_id;
+
+const item1 = document.getElementById(1);
 
 //OPENING NAV BAR MOBILE
 open_nav_btn.addEventListener("click", () => {
@@ -20,22 +22,24 @@ close_nav_btn.addEventListener("click", () => {
 //HIGHLIGHTING EACH NAV ELEMENT
 // for (let i = 0; i < nav_item.length; i++) {
 //   nav_item[i].addEventListener("click", () => {
-//       nav_item[i].classList.add("selected");
-//       console.log("clicked nav item " + (i + 1) + "!");
+//     nav_item[i].classList.add("selected");
+//     console.log("clicked nav item " + (i + 1) + "!");
 //   });
 // }
-for (let i = 0; i < nav_item.length; i++) {
-  nav_item[i].addEventListener("click", () => {
-    if (_item_id == i + 1) {
-      nav_item[i].classList.add("selected");
-      console.log("clicked nav item " + (i + 1) + "!");
-    }
-    // else {
-    //   nav_item[i].classList.remove("selected");
-    //   console.log("clicked nav item " + (i + 1) + "!");
-    // }
+
+nav_items.forEach((nav_item) => {
+  //add event listener to all nav elements
+  nav_item.addEventListener("click", () => {
+    //remove underline on all elements
+    nav_items.forEach((nav_item) => {
+      nav_item.classList.remove("selected");
+    });
+    //adds underline to selected element
+    nav_item.classList.add("selected");
   });
-}
+});
+
+//UNDERLINE LENGHT FOR EACH NAV ELEMENTS BY ID
 
 //FUNCTIONS
 function openNav() {
@@ -59,5 +63,5 @@ function closeNav() {
 
 function click_reply(item_id) {
   _item_id = item_id;
-  console.log("item_id: " + item_id);
+  console.log("item_id: " + _item_id);
 }

@@ -89,7 +89,7 @@ body {
 }
 
 .container header nav .selected ::after {
-  width: 70px;
+  width: 80px;
 }
 
 .container header nav ul {
